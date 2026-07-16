@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ItsShytech - Kontakt</title>
+    <title>ItsRootedShytech - Kontakt</title>
     <style>
         /* DEIN BESTEHENDER STYLE */
         :root {
@@ -174,12 +174,13 @@
 
     <header class="main-header">
         <div class="header-container">
-            <h3 class="header-title">ItsShytech's website</h3>
+            <h3 class="header-title">ItsRootedShytech</h3>
             <nav class="navbar">
                 <ul class="nav-links">
+                    <li><a href="../../index.html">Vorstellung</a></li>
                     <li><a href="haupt.html">Startseite</a></li>
-                    <li><a href="aboutus.html">Über Mich</a></li>
-                    <li><a href="contact.html" class="nav-btn">Du Bist hier</a></li>
+                    <li><a href="aboutus.html">Über uns</a></li>
+                    <li><a href="contact.html" class="nav-btn">Kontakt</a></li>
                 </ul>
             </nav>
         </div>
@@ -212,11 +213,15 @@
                         <textarea id="message" name="message" rows="6" required placeholder="Schreibe Deine Nachricht Hier"></textarea>
                     </div>
 
-                    <button type="submit" class="submit-btn">Nachricht senden</button>
+                    <button type="submit" class="submit-btn" onclick="successfullysended()">Nachricht senden</button>
                 </form>
             </section>
         </article>
     </main>
-
+<script>
+    function successfullysended() {
+        alert("Erfolgreich die Nachricht Gesendet!\nDanke Für die Nachricht!")
+    }
+</script>
 </body>
 </html>
